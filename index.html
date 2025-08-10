@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรกของโปรเจกต์</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for 'Prompt' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center p-4 bg-slate-950">
+
+    <!-- Header Section with Logo and Project Name -->
+    <header class="text-center mb-8">
+        <div class="flex justify-center mb-4">
+            <!-- Project Logo -->
+            <img src="logo มรภอุบล.png" alt="Project Logo" class="w-48 h-48 rounded-full border-4 border-blue-600">
+             <!-- Project Logo 2 -->
+            <img src="สาขาlogo-removebg-preview.png" alt="Project Logo 2" class="w-48 h-48 rounded-full border-4 border-blue-600">
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-blue-100 leading-tight mt-4">
+            การพัฒนาระบบบริหารจัดการจองห้องประชุมและจัดการจัดกิจกรรม
+        </h1>
+        <p class="text-lg md:text-xl font-light text-blue-300 mt-2">
+           โปรเจคนี้เป็นการร่วมมือระหว่างนักศึกมหาวิทยาลัยราชภัฏอุบลราชธานีและหอสมุดประชาชนในการสร้างสรรค์ผลงานทาง
+           เทคโนโลยีเว็บไชต์ในการจองห้องการเรียนรู้และคอส์เรียนฟรีภาคประชาชน
+        </p>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-5xl mx-auto space-y-12">
+
+        <!-- Button to Enter Program -->
+        <section class="flex justify-center">
+            <a href="program_entry.php" class="btn-program px-10 py-4 font-bold text-xl tracking-wider hover:scale-105 transform transition duration-300 ease-in-out">
+                Project
+            </a>
+        </section>
+
+        <!-- อาจารย์ 2 คน -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <h2 class="col-span-1 md:col-span-2 text-3xl font-bold mb-4 border-b-2 border-blue-600 pb-2 text-blue-200">อาจารย์ที่ปรึกษา</h2>
+            <div class="card p-6 rounded-xl flex flex-col items-center">
+                <img src="jt.jpg" alt="อาจารย์ 1" class="profile-img rounded-full mb-4 border-4 border-blue-400">
+                <h3 class="text-xl font-semibold text-blue-100">ผู้ช่วยศาสตราจารย์สุระเจตน์ อ่อนฤทธิ์</h3>
+                <p class="text-blue-300">คณบดีคณะเทคโนโลยีอุตสาหกรรม อาจารย์ที่ปรึกษาโครงงาน</p>
+            </div>
+            <div class="card p-6 rounded-xl flex flex-col items-center">
+                <img src="oh.jpg" alt="อาจารย์ 2" class="profile-img rounded-full mb-4 border-4 border-blue-400">
+                <h3 class="text-xl font-semibold text-blue-100">อาจารย์อัจฉริยา เหล่าศิริ</h3>
+                <p class="text-blue-300">อาจารย์ที่ปรึกษาโครงงาน</p>
+            </div>
+        </section>
+
+        <!-- อาจารย์ 1 คน -->
+        <section class="flex justify-center text-center">
+            <div class="card p-6 rounded-xl flex flex-col items-center w-full max-w-sm">
+                <img src="os.jpg" alt="อาจารย์ 3" class="profile-img rounded-full mb-4 border-4 border-blue-400">
+                <h3 class="text-xl font-semibold text-blue-100">ผู้ช่วยศาสตราจารย์ อรอุมา เนียมหอม</h3>
+                <p class="text-blue-300">อาจารย์ผู้ประสานงานประจำรายวิชา
+                    </p>
+            </div>
+        </section>
+
+        <!-- นักศึกษา 2 คน -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+            <h2 class="col-span-1 md:col-span-2 text-3xl font-bold mb-4 border-b-2 border-blue-600 pb-2 text-blue-200">สมาชิกในกลุ่ม</h2>
+            <div class="card p-6 rounded-xl flex flex-col items-center">
+                <img src="ter.jpg" alt="นักศึกษา 1" class="profile-img rounded-full mb-4 border-4 border-blue-400">
+                <h3 class="text-xl font-semibold text-blue-100">1.นายจิรายุ แก้วชาติ</h3>
+                <p class="text-blue-300">นักศึกษาชั้นปีที่4
+หมู่เรียน วท.บ.65.05.4 </p>
+            </div>
+            <div class="card p-6 rounded-xl flex flex-col items-center">
+                <img src="maew.jpg" alt="นักศึกษา 2" class="profile-img rounded-full mb-4 border-4 border-blue-400">
+                <h3 class="text-xl font-semibold text-blue-100">2.นายวิศรุต ธุระหาย</h3>
+                <p class="text-blue-300">นักศึกษาชั้นปีที่4
+หมู่เรียน วท.บ.65.05.4</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
